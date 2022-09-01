@@ -18,7 +18,6 @@ if(!["YETKİLİ ROL ID"].some(role => message.member.roles.cache.get(role)) && (
   .setDescription(`${member} kişisine ${vip} rolü verildi!`)
   .setTimestamp()
   .setFooter(`Developed by Chewy`)
-message.react(client.emojiler.onay).catch();
 message.channel.send(embed).then(x => x.delete({timeout: 5000}));
 } 
 
